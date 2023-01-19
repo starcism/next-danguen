@@ -23,15 +23,21 @@ const Upload: NextPage = () => {
           <input className="hidden" type="file" />
         </label>
       </div>
-      <div>
-        <label htmlFor="price">Price</label>
-        <div>
-          <div>
-            <span>$</span>
+      <div className="my-5">
+        <label className="text-sm font-medium text-gray-700" htmlFor="price">
+          Price
+        </label>
+        <div className="relative flex items-center shadow-sm rounded-md">
+          <div className="absolute left-0 pl-3 flex items-center justify-center pointer-events-none">
+            <span className="text-sm text-gray-500">$</span>
           </div>
-          <input id="price" type="text" placeholder="0.00" />
-          <div>
-            <span>USD</span>
+          <input 
+            id="price" 
+            type="text" 
+            placeholder="0.00" 
+            className="appearance-none w-full pl-7 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 outline-none focus:ring-orange-500 focus:border-orange-500" />
+          <div className="absolute right-0 pr-3 flex items-center justify-center pointer-events-none">
+            <span className="text-sm text-gray-500">USD</span>
           </div>
         </div>
       </div>
