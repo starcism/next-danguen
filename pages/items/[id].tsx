@@ -8,22 +8,15 @@ const ItemDetail: NextPage = () => {
         <div className="flex py-3 border-t border-b items-center cursor-pointer space-x-3">
           <div className="w-12 h-12 rounded-full bg-slate-300"/>
           <div>
-            <p className="text-sm font-medium text-gray-700">Steve Jebs</p>
+            <p className="text-sm font-medium text-gray-700">Elon Musk</p>
             <p className="text-sm font-medium text-gray-500">프로필 보기 &rarr;</p>
           </div>
         </div>
         <div className="mt-10">
-          <h1 className="text-3xl font-bold text-gray-900">Galaxy S50</h1>
-          <p className="text-3xl block mt-3 text-gray-900">$140</p>
+          <h1 className="text-3xl font-bold text-gray-900">GOOODS</h1>
+          <p className="text-3xl block mt-3 text-gray-900">$500</p>
           <p className="text-base my-6 text-gray-700">
-            My money&apos;s in that office, right? If she start giving me some
-            bullshit about it ain&apos;t there, and we got to go someplace else
-            and get it, I&apos;m gonna shoot you in the head then and there.
-            Then I&apos;m gonna shoot that bitch in the kneecaps, find out where
-            my goddamn money is. She gonna tell me too. Hey, look at me when
-            I&apos;m talking to you, motherfucker. You listen: we go in there,
-            and that ni**a Winston or anybody else is in there, you the first
-            motherfucker to get shot. You understand?
+            Introduction Post
           </p>
           <div className="flex items-center justify-between space-x-2">
             <button className="flex-1 bg-orange-500 text-white py-3 mx-5 rounded-lg font-medium hover:bg-orange-400 focus:outline-none">
@@ -51,12 +44,12 @@ const ItemDetail: NextPage = () => {
       </div>
       <div className="">
         <h2 className="text-2xl font-bold text-gray-900">Similar items</h2>
-        <div>
+        <div className="grid grid-cols-2 mt-6 gap-4">
           {[1, 2, 3, 4, 5, 6].map((_, i) => (
             <div key={i}>
-              <div />
-              <h3>Galaxy S60</h3>
-              <p>$6</p>
+              <div className="h-56 w-full mb-4 bg-red-100"/>
+              <h3 className="text-base text-gray-700">iPhone 14 Pro Max</h3>
+              <p className="text-sm font-semibold -mb-1 text-gray-900">$1000</p>
             </div>
           ))}
         </div>
