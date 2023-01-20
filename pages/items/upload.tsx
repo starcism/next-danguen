@@ -24,7 +24,7 @@ const Upload: NextPage = () => {
         </label>
       </div>
       <div className="my-5">
-        <label className="text-sm font-medium text-gray-700" htmlFor="price">
+        <label className="text-sm font-medium block mb-1 text-gray-700" htmlFor="price">
           Price
         </label>
         <div className="relative flex items-center shadow-sm rounded-md">
@@ -42,12 +42,14 @@ const Upload: NextPage = () => {
         </div>
       </div>
       <div>
-        <label>Description</label>
-        <div>
-          <textarea rows={4} />
-        </div>
+        <label className="text-sm font-medium block mb-1 text-gray-700">
+          Description
+        </label>
+        <textarea className="mt-1 resize-none shadow-sm w-full rounded-md border border-gray-300 outline-none focus:ring-orange-500 focus:border-orange-500" rows={4} />
       </div>
-      <button>Upload product</button>
+      <button className="w-full bg-orange-500 hover:bg-orange-400 text-white mt-5 py-2 px-4 outline-none border border-transparent rounded-md shadow-sm text-sm font-medium focus:ring-orange-400">
+        Upload product
+      </button>
     </div>
   );
 };

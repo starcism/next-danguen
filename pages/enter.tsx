@@ -1,8 +1,5 @@
+import cls from "@/libs/utilities";
 import { useState } from "react";
-
-function cls(...classnames: string[]){
-  return classnames.join(" ")
-}
 
 export default function Enter() {
   const [method, setMethod] = useState<"email" | "phone">("email");
@@ -56,7 +53,7 @@ export default function Enter() {
               </div>
             ) : null}
           </div>
-          <button className="bg-orange-500 hover:bg-orange-400 text-white mt-5 py-2 px-4 outline-none border border-transparent rounded-md shadow-sm text-sm font-medium focus:ring-2 focus:ring-offset-2 focus:ring-orange-400 ">
+          <button className="bg-orange-500 hover:bg-orange-400 text-white mt-5 py-2 px-4 outline-none border border-transparent rounded-md shadow-sm text-sm font-medium focus:ring-orange-400 ">
             {method === "email" ? "이메일로 시작하기" : null}
             {method === "phone" ? "전화번호로 시작하기" : null}
           </button>
